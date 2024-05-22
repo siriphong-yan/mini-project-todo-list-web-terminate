@@ -1,0 +1,28 @@
+{
+  "name": "todo-list-web-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run serve\" \"npm run client\"",
+    "dev": "concurrently \"npm run serveDev\" \"npm run clientDev\"",
+    "serve": "node server.js",
+    "serveDev": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "clientDev": "npm run dev --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dayjs": "^1.11.11",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
+    "react-icons": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
